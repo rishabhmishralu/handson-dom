@@ -1,0 +1,40 @@
+.card{
+    width: 100px;
+    height: 200px;
+    border: 2px solid rgb(126, 10, 250);
+   
+   
+}
+.main-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+body{ background-color: black;}
+.head{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+
+}
+pre{
+    color: bisque;
+    margin-left: 120px;
+}
+b{
+    color: brown;
+    margin-left: 10PX;
+}
+p{
+    color: antiquewhite;
+}
+h1{
+    color: aliceblue;
+}
+.dibba{
+    margin:50px;
+    border: 5px solid darkcyan;
+    border-radius: 10px;
+    padding: 10px;
+    
+}

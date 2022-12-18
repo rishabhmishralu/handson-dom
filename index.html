@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1 class="head">JavaScript</h1>
+     <h2 class="head">DOM</h2>
+<br><hr>
+
+<div class="dibba">
+    <p><b id="text" >1-Write the code to access element which is having id as "text"</b></p>
+    <pre>const text =document.getElementById("text")
+        console.log(text);</pre>
+        <hr>
+
+
+    <p><b>2-Write the code to access element which is having tag as "h1"</b></p> 
+          <h1>Rishabh Mishra</h1>
+          <pre>
+            const text=document.getElementsByTagName("h1")
+            console.log(text);</pre>   
+            <hr>
+    <p><b>3-Write the code to access element which is having class as "box"</b></p>   
+       <ul>
+        <li class="box">aplle</li>
+        <li class="box">banana</li>
+        <li class="box">mango</li>
+       </ul>
+      <pre>const text=document.getElementsByClassName('box')
+        console.log(text);
+        </pre> 
+        <hr>
+    <p><b>4-<h1 id="hello">Hello </h1>
+
+        Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</b></p>
+       <pre>document.querySelector('#hello').textContent="Hello World"</pre> 
+       <hr>
+
+       <p><b>5-Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</b></p>
+       <div class="main-card">
+         <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+        <button class="button">Change Flex direction</button>
+       
+
+       <pre>document.querySelector(".button").addEventListener('click',()=>{
+        document.querySelector('.main-card').style.flexDirection="column"
+            })
+       </pre>
+     <hr> 
+     <p><b>6-What’s the difference between window vs document?</b></p>
+     <p>The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created.</p>
+     <hr>
+     <h1 id="heading">Hello </h1>
+
+       <p><b> 7-Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</b></p>
+      <pre>document.getElementById("heading").style.color="red"</pre>
+      <hr>
+     <p><b>8-Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</b></p>  
+     <p class="texts">Hello world</p>
+     <button class="button-2">Replace Text</button>
+     <hr>
+     <p><b>9-Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</b></p>
+     <div >
+ <h1 class="time"><div class="hour"></div>
+       <span>:</span>
+       <div class="min"></div><span>:</span>
+       <div class="sec"></div>
+       <br>
+       
+ </div></h1>
+  <hr>
+
+  <p><b>10-Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</b></p>
+   <form action=""><label for="" style="color: white;">year:</label>
+    <select id="text-input" name="" >
+      <option value="20-21">20-21</option>
+      <option value="21-22">21-22</option>
+    </select>
+    <div class="year"></div></form>
+</div>
+
+    
+<script src="./main.js"></script>
+</body>
+</html>
